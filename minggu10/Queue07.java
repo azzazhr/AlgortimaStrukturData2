@@ -15,19 +15,11 @@ public class Queue07 {
     }
 
     public boolean IsEmpty() {
-        if (size == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return size == 0;
     }
 
     public boolean IsFull() {
-        if (size == max) {
-            return true;
-        } else {
-            return false;
-        }
+        return size == max;
     }
 
     public void peek() {
@@ -65,6 +57,7 @@ public class Queue07 {
     public void Enqueue(int nb) {
         if (IsFull()) {
             System.out.println("Queue sudah penuh");
+            throw new IllegalStateException("Queue overflow!");
         } else {
             if (IsEmpty()) {
                 front = rear = 0;
@@ -84,6 +77,7 @@ public class Queue07 {
         int dt = 0;
         if (IsEmpty()) {
             System.out.println("Queue masih kosong");
+            throw new IllegalStateException("Queue underflow!");
         } else {
             dt = data[front];
             size--;
