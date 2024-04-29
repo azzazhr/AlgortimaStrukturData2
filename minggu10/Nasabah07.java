@@ -87,6 +87,15 @@ public class Nasabah07 {
         }
     }
 
+    public void peekRear() {
+        if (!isEmpty()) {
+            System.out.println("Elemen paling belakang: " + data[rear].norek + " " + data[rear].nama + " "
+                    + data[rear].alamat + " " + data[rear].umur + " " + data[rear].saldo);
+        } else {
+            System.out.println("Queue masih kosong");
+        }
+    }
+
     public void print() {
         if (isEmpty()) {
             System.out.println("Queue masih kosong");
