@@ -89,6 +89,7 @@ public class PencarianPasien07 {
             } else {
                 right = mid - 1;
             }
+
         }
         return -1;
     }
