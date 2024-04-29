@@ -107,7 +107,6 @@ public class MainKlinikDokter07 {
                     System.exit(0);
                 default:
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
-
             }
         }
     }
