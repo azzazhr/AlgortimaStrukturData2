@@ -24,4 +24,5 @@ public class Pasien07 {
         System.out.println("Nama Dokter: " + dokter07);
         System.out.println();
     }
+
 }
