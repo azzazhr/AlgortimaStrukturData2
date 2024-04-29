@@ -7,8 +7,9 @@ public class QueueMainPrak207 {
         System.out.println("Pilih menu: ");
         System.out.println("1. Antrian Baru");
         System.out.println("2. Antrian Keluar");
-        System.out.println("3. Cek ANtrian terdepan");
+        System.out.println("3. Cek Antrian terdepan");
         System.out.println("4. Cek Semua Antrian");
+        System.out.println("5. Cek Antrian paling belakang");
         System.out.println("--------------------------------");
     }
 
@@ -41,6 +42,7 @@ public class QueueMainPrak207 {
                     sc.nextLine();
                     antri.Enqueue(nb);
                     break;
+
                 case 2:
                     Nasabah07 data = antri.Dequeue();
                     if (!"".equals(data.norek) && !"".equals(data.nama) && !"".equals(data.alamat) && data.umur != 0
@@ -53,8 +55,13 @@ public class QueueMainPrak207 {
                 case 3:
                     antri.peek();
                     break;
+
                 case 4:
                     antri.print();
+                    break;
+
+                case 5:
+                    antri.peekRear();
                     break;
             }
         } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4);
