@@ -9,4 +9,5 @@ public class Node07 {
         this.data = data;
         this.next = next;
     }
+
 }
