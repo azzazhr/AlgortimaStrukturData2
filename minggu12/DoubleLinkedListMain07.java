@@ -43,5 +43,22 @@ public class DoubleLinkedListMain07 {
         dll.print();
         System.out.println("Size : " + dll.size());
         System.out.println("============================");
+        dll.celar();
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("============================");
+        dll.addFirst(3);
+        dll.addLast(4);
+        dll.addFirst(7);
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("============================");
+        dll.add(40, 1);
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("============================");
+        System.out.println("Data Awal Pada Linked Lists Adalah: " + dll.getFirst());
+        System.out.println("Data Akhir Pada Linked Lists Adalah: " + dll.getLast());
+        System.out.println("Data Indeks Ke-1 Pada Linked Lists Adalah: " + dll.get(1));
     }
 }
